@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.30](https://github.com/mangalakulal105/language-servers/compare/chat-client/v0.1.29...chat-client/v0.1.30) (2025-07-31)
+
+
+### Features
+
+* support http transport without authorization for MCP ([97e806c](https://github.com/mangalakulal105/language-servers/commit/97e806ce7ea5e5be1fd60c4a4d9a54cf76c8f8cb))
+
+
+### Bug Fixes
+
+* **amazonq:** fix the issue that invalid image notification always show ([#2007](https://github.com/mangalakulal105/language-servers/issues/2007)) ([ceed762](https://github.com/mangalakulal105/language-servers/commit/ceed762ace5f94cb0e0a7978eb6c4894bc11ce42))
+
 ## [0.1.29](https://github.com/aws/language-servers/compare/chat-client/v0.1.28...chat-client/v0.1.29) (2025-07-29)
 
 
