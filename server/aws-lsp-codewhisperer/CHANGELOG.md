@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.0.71](https://github.com/aws/language-servers/compare/lsp-codewhisperer/v0.0.70...lsp-codewhisperer/v0.0.71) (2025-07-31)
+
+
+### Features
+
+* adding inline chat telemetry ([#2001](https://github.com/aws/language-servers/issues/2001)) ([8b1c9c7](https://github.com/aws/language-servers/commit/8b1c9c7c3859cdfbbd0abb059066a5c6fe2ffaf2))
+* support http transport without authorization for MCP ([97e806c](https://github.com/aws/language-servers/commit/97e806ce7ea5e5be1fd60c4a4d9a54cf76c8f8cb))
+
+
+### Bug Fixes
+
+* adding acceptedCharacterCount to UserTriggerDecisionEvent ([#2014](https://github.com/aws/language-servers/issues/2014)) ([3f94486](https://github.com/aws/language-servers/commit/3f944865483a6913138335fe61eee70ae71d7c03))
+* adjust cross file context config ([#2011](https://github.com/aws/language-servers/issues/2011)) ([f7ade37](https://github.com/aws/language-servers/commit/f7ade3767e714d5178f24fd9cc90349c5f417979))
+* remove malicious characters from prompt input ([#2009](https://github.com/aws/language-servers/issues/2009)) ([bf8a1e6](https://github.com/aws/language-servers/commit/bf8a1e6136801532132f2bf82def4ca5bf49c82f))
+* sometimes Enter does not auto trigger ([#2005](https://github.com/aws/language-servers/issues/2005)) ([c9af035](https://github.com/aws/language-servers/commit/c9af0353a6c6f3b2ca4eead02f19e8ab5ddb8ef1))
+* use fast glob streaming when collecting files ([#2003](https://github.com/aws/language-servers/issues/2003)) ([f7c0a0b](https://github.com/aws/language-servers/commit/f7c0a0b0ef9ce3ecd620acfef00e55745db3d71f))
+
 ## [0.0.70](https://github.com/aws/language-servers/compare/lsp-codewhisperer/v0.0.69...lsp-codewhisperer/v0.0.70) (2025-07-29)
 
 
