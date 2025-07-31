@@ -368,11 +368,19 @@ export class ArtifactManager {
             onlyFiles: true,
         })
 
+        const hasJavaFile = files.some(file => file.endsWith('.java'))
+
         for (const relativePath of files) {
             const fullPath = path.join(directoryPath, relativePath)
-            const language = getCodeWhispererLanguageIdFromPath(fullPath)
+            const isJavaProjectFile = isJavaProjectFileFromPath(fullPath)
+            const language = isJavaProjectFileFromPath(fullPath) ? 'java' : getCodeWhispererLanguageIdFromPath(fullPath)
 
-            if (!language || !SUPPORTED_WORKSPACE_CONTEXT_LANGUAGES.includes(language)) {
+            if (
+                !language ||
+                !SUPPORTED_WORKSPACE_CONTEXT_LANGUAGES.includes(language) ||
+                // skip processing the java project file if there's no java source file
+                (!hasJavaFile && isJavaProjectFile)
+            ) {
                 continue
             }
 
@@ -631,7 +639,7 @@ export class ArtifactManager {
         files: FileMetadata[]
     ): Promise<FileMetadata[]> {
         const workspacePath = URI.parse(workspaceFolder.uri).path
-        const hasJavaFiles = files.some(file => file.language === 'java' && file.relativePath.endsWith('java'))
+        const hasJavaFiles = files.some(file => file.language === 'java' && file.relativePath.endsWith('.java'))
 
         if (!hasJavaFiles) {
             return files
