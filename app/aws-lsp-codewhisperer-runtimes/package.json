@@ -42,7 +42,7 @@
         "@wdio/cli": "^9.12.2",
         "@wdio/local-runner": "^9.12.1",
         "@wdio/mocha-framework": "^9.12.1",
-        "@wdio/spec-reporter": "^9.11.0",
+        "@wdio/spec-reporter": "^9.19.1",
         "html-loader": "^5.1.0",
         "html-webpack-plugin": "^5.6.3",
         "node-loader": "^2.1.0",
